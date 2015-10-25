@@ -14,21 +14,16 @@ Here is a breakdown of each field;
 **Y**: The y coordinates
 **OBJECTID**: The Unique row identification number
 **PLAYGROUND**: The playground name
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
-****
+**Location**: The location of the Playground
+**SURFACE**: The type of ground surface used
+**PARKING**: Information abaout parking
+**OPENHRS**: Opening hours information
+**TOILETFACI**: Toilet facilities availability
+**SPECIANNEE**: Special needs information
+**EQUIPMENT**: Equipment information
+**Lat**: Latitude
+**Long**: Longitude
+**EastITM**: East ITM
+**NorthITM**: North ITM
+**EastIG**: East IG
+**NorthIG**: North IG
