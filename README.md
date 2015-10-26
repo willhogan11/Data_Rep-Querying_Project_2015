@@ -1,6 +1,6 @@
-# 
+# Primary Schools API
 ## Data Representation and Querying Project 2015
-### Created by: Will Hogan
+### Created by: Will Hogan, 3rd year Software Development, GMIT Galway
 
 ## Overview
 As a required part of my 3rd year project for module Data Representation & Querying, in GMIT Galway, I have created an API which Allows developers to connect and retrieve information from the above URL. The details i feel will be extremely useful as it holds a complete list of Primary Schools in Ireland, plus all other associated relevant data. 
@@ -34,4 +34,8 @@ Here is a breakdown of each field:
 | **Total Pupils** | Total Pupils in the school  |
 
 
-##
+##Design & URL's
+My API was designed to be made accessible to anyone looking for information regarding Primary Schools in Ireland. This has been made possible by connecting with the [data.gov.ie](https://data.gov.ie/data) website and using my API as the interface to retrieve the information. 
+
+####Using the provided URL's
+
