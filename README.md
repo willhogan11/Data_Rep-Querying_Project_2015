@@ -85,3 +85,35 @@ Here's an example of a response in JSON format
   }
 
 ```
+
+####Other type of search options
+Likewise if we change the search criteria at this URL:
+*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All Irish]*. 
+
+To search for:
+*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All Irish*.
+The reponse will contain all rows where the school ciriculum is taught through Irish. 
+
+A sample response would look like this:
+```json
+ {
+    "County Name":"Galway",
+    "Local Authority Desc":"Galway City Council",
+    "Roll No.":"19858V",
+    "Official School Name":"GAELSCOIL DARA",
+    "Address Line 1":"B�THAR BHAILE AN LOCH�IN",
+    "Address Line 2":"AN RINN MH�R",
+    "Address Line 3":"GAILLIMH",
+    "Address Line 4":"",
+    "Phone Number":91757145,
+    "Email Address":"gaelscoildara.ias@eircom.net",
+    "Ethos/Religion Desc":"CATHOLIC",
+    "Island Ind (Y/N)":"N",
+    "Irish Classification Description":"All Irish",
+    "DEIS (Y/N)":"N",
+    "Total Boys":"188",
+    "Total Girls":"233",
+    "Total Pupils":"421"
+  }
+```
+
