@@ -39,9 +39,11 @@ Here is a breakdown of each field:
 My API was designed to be made accessible to anyone looking for information regarding Primary Schools in Ireland. This has been made possible by connecting with the [data.gov.ie](https://data.gov.ie/data) website and using my API as the interface to retrieve the information. 
 
 ####Using the provided URL's
-With this API, you can get a list returned in JSON format using the GET method at the folling URL:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Carlow*
-will return a list of schools in Co Carlow, with the following properties for each one:
+With this API, you can get a list returned in JSON format using the GET method at the following URL:
+*http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name]*. 
+where the _name_ section of the url, requires the users input. 
+So for example if we type in Carlow instead of the [name], the URL will change to this:
+*http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Carlow* and will return a list of schools in Co Carlow, with the following properties for each one:
 - **County Name**: The name of the Country 
 - **Local Authority Desc**: Local Co.Council name
 - **Roll No.**: The Role ID Number  
