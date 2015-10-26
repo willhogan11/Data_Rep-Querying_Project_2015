@@ -3,12 +3,12 @@
 ### Created by: Will Hogan
 
 ## Overview
-As a required part of my 3rd year project for module Data Representation & Querying, in GMIT Galway, I have created an API which Allows developers to connect and retrieve information from the above URL. The details i feel will be extremely useful as it holds a complete list of primary Schools in Ireland. 
+As a required part of my 3rd year project for module Data Representation & Querying, in GMIT Galway, I have created an API which Allows developers to connect and retrieve information from the above URL. The details i feel will be extremely useful as it holds a complete list of Primary Schools in Ireland, plus all other associated relevant data. 
 
 This project provides the design and documentation for the dataset "Primary-and-Special-Schools-List-2014-2015" which is available at this URL: [data.gov.ie](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html). 
 
 ## About the Data itself
-The data itself is in CSV format (Comma Separated Values), which was obtained from [data.gov.ie](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html). Look for the heading within this page called "Primary All Schools" 
+The data itself is in CSV format (Comma Separated Values), which was obtained from [Data-on-Individual-Schools](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html).You will need to look for the heading within this page called "Primary All Schools" 
 The file contains 3138 unique rows. Each row has 17 fields with associated values. 
 
 Here is a breakdown of each field:
@@ -32,3 +32,6 @@ Here is a breakdown of each field:
 | **Total Boys** |  Total Boys in the school |
 | **Total Girls** | Total Girls in the school | 
 | **Total Pupils** | Total Pupils in the school  |
+
+
+##
