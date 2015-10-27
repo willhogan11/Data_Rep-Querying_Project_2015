@@ -89,10 +89,10 @@ Here's an example of a response in JSON format
 
 ####Other type of search options
 Likewise if we change the search criteria at this URL:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All+Irish]*. 
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All+Irish] ``` 
 
 To search for:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All+Irish*.
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All+Irish ```
 The reponse will contain all rows where the school ciriculum is taught through Irish. 
 
 A sample response would look like this:
