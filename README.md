@@ -40,10 +40,10 @@ My API was designed to be made accessible to anyone looking for information rega
 
 ####Using the provided URL's
 With this API, you can get a list returned in JSON format using the GET method at the following URL:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name]*. 
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name] ``` 
 where the _name_ section of the url, requires the users input. 
 So for example if we type in Carlow instead of the [name], the URL will change to this:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Carlow* and will return a list of schools in Co Carlow, with the following properties for each one:
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Carlow ``` and will return a list of schools in Co Carlow, with the following properties for each one:
 - **County Name**: The name of the Country 
 - **Local Authority Desc**: Local Co.Council name
 - **Roll No.**: The Role ID Number  
@@ -64,6 +64,7 @@ So for example if we type in Carlow instead of the [name], the URL will change t
 
 Here's an example of a response in JSON format
 ```json
+[
   {
     "County Name":"Carlow",
     "Local Authority Desc":"Carlow County Council",
@@ -83,20 +84,21 @@ Here's an example of a response in JSON format
     "Total Girls":"103",
     "Total Pupils":"207"
   }
-
+]
 ```
 
 ####Other type of search options
 Likewise if we change the search criteria at this URL:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All Irish]*. 
+*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All+Irish]*. 
 
 To search for:
-*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All Irish*.
+*http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All+Irish*.
 The reponse will contain all rows where the school ciriculum is taught through Irish. 
 
 A sample response would look like this:
 ```json
- {
+[
+  {
     "County Name":"Galway",
     "Local Authority Desc":"Galway City Council",
     "Roll No.":"19858V",
@@ -115,5 +117,6 @@ A sample response would look like this:
     "Total Girls":"233",
     "Total Pupils":"421"
   }
+]
 ```
 
