@@ -87,7 +87,7 @@ Here's an example of a response in JSON format
 ]
 ```
 
-####Other type of search options
+####Sample Search Options
 Likewise if we change the search criteria at this URL:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All+Irish] ``` 
 
@@ -103,8 +103,8 @@ A sample response would look like this:
     "Local Authority Desc":"Galway City Council",
     "Roll No.":"19858V",
     "Official School Name":"GAELSCOIL DARA",
-    "Address Line 1":"B�THAR BHAILE AN LOCH�IN",
-    "Address Line 2":"AN RINN MH�R",
+    "Address Line 1":"BÓTHAR BHAILE AN LOCHAIN",
+    "Address Line 2":"AN RINN MHÓR",
     "Address Line 3":"GAILLIMH",
     "Address Line 4":"",
     "Phone Number":91757145,
@@ -120,3 +120,31 @@ A sample response would look like this:
 ]
 ```
 
+To search for:
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/SchoolName/Ennistymon+National+School ```
+The reponse will contain a row with the School name 
+
+A sample response would look like this:
+```json
+[
+  {
+    "County Name":"Clare",
+    "Local Authority Desc":"Clare County Council",
+    "Roll No.":"20245S",
+    "Official School Name":"Ennistymon National School",
+    "Address Line 1":"Ennistymon",
+    "Address Line 2":"Co. Clare",
+    "Address Line 3":"",
+    "Address Line 4":"",
+    "Phone Number":null,
+    "Email Address":"etynns@gmail.com",
+    "Ethos/Religion Desc":"CATHOLIC",
+    "Island Ind (Y/N)":"N",
+    "Irish Classification Description":"No Irish",
+    "DEIS (Y/N)":"Y",
+    "Total Boys":"56",
+    "Total Girls":"60",
+    "Total Pupils":"116"
+  }
+]
+```
