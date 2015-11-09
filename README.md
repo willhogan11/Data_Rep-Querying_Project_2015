@@ -87,6 +87,33 @@ Here's an example of a response in JSON format
 ]
 ```
 
+And the equivalent in XML format:
+```xml
+<Primary Schools>
+	<County Name>Carlow</County Name>
+	<Local Authority Desc>Carlow County Council</Local Authority Desc>
+	<Roll No.>00651R</Roll No.>
+	<Official School Name>BORRIS MXD N S</Official School Name>
+	<Address>
+		<Address Line 1>BORRIS</Address Line 1>
+		<Address Line 2>CO CARLOW</Address Line 2>
+		<Address Line 3></Address Line 3>
+		<Address Line 4></Address Line 4>
+	</Address>
+	<Phone Number>599773402</Phone Number>
+	<Email Address>borrismixedns@gmail.com</Email Address>
+	<Ethos/Religion Desc>CATHOLIC</Ethos/Religion Desc>
+	<Island Ind (Y/N)>N</Island Ind (Y/N)>
+	<Irish Classification Description>No Irish</Irish Classification Description>
+	<DEIS (Y/N)>N</DEIS (Y/N)>
+	<Totals>
+		<Total Boys>104</Total Boys>
+		<Total Girls>103</Total Girls>
+		<Total Pupils>207</Total Pupils>
+	</Totals>
+</Primary Schools>
+```
+
 ####Sample Search Options
 Likewise if we change the search criteria at this URL:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All+Irish] ``` 
@@ -95,7 +122,7 @@ To search for:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All+Irish ```
 The reponse will contain all rows where the school ciriculum is taught through Irish. 
 
-A sample response would look like this:
+A sample JSON response would look like this:
 ```json
 [
   {
