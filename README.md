@@ -7,8 +7,14 @@ As a required part of my 3rd year project for module Data Representation & Query
 
 This project provides the design and documentation for the dataset "Primary-and-Special-Schools-List-2014-2015" which is available at this URL: [data.gov.ie](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html). 
 
+For reference, i have attached the following files:
+- ```Primary-and-Special-Schools-List-2014-2015.json```
+- ```Primary-and-Special-Schools-List-2014-2015.csv```
+- ```xmlSample.xml```
+- 
+
 ## Information about the Dataset
-The data itself is in CSV format (Comma Separated Values), which was obtained from [Data-on-Individual-Schools](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html).You will need to look for the heading within this page called "Primary All Schools" 
+The data extracted form the website itself is in CSV format (Comma Separated Values), which was obtained from [Data-on-Individual-Schools](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html).You will need to look for the heading within this page called "Primary All Schools" 
 
 ###Size, Fields & Values
 The file contains 3138 unique rows. Each row has 17 fields with associated values. 
@@ -175,3 +181,6 @@ A sample response would look like this:
   }
 ]
 ```
+
+##HTTP Requests
+Here are some examples of how to deal with http requests using this API. So with this in mind here are the four options i'll be covering;
