@@ -11,7 +11,7 @@ For reference, i have attached the following files:
 - ```Primary-and-Special-Schools-List-2014-2015.json```
 - ```Primary-and-Special-Schools-List-2014-2015.csv```
 - ```xmlSample.xml```
-- 
+
 
 ## Information about the Dataset
 The data extracted form the website itself is in CSV format (Comma Separated Values), which was obtained from [Data-on-Individual-Schools](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html).You will need to look for the heading within this page called "Primary All Schools" 
@@ -182,5 +182,16 @@ A sample response would look like this:
 ]
 ```
 
-##HTTP Requests
-Here are some examples of how to deal with http requests using this API. So with this in mind here are the four options i'll be covering;
+##HTTP methods and Examples
+Here i'll be covering some examples of how to use HTTP methods with this API. 
+
+A typical breakdown of the first url, outlined as a JSON example ```http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name]```
+
+
+|  URL Section     | Explanation  |
+|:----------------:|:-------------------------------------------:|
+| http  | Protocol being used |
+| www        | SubDomain |
+| education.ie | Domain | 
+| en/Publications/Statistics/PrimarySchools/county/name/ | Path |  
+| [name] | The Search Criteria |
