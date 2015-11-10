@@ -1,6 +1,10 @@
 # Primary Schools API
-### Data Representation and Querying Project 2015
-### Created by: Will Hogan, 3rd year Software Development, GMIT Galway
+
+- **Project Heading:** Software Development Project for 3rd year subject Data Representation and Querying
+- **Title:** Primary Schools API
+- **Created:** By Will Hogan
+- **Submission Date:** 13th November 2015, 5pm
+- **Third Level Establishment:** GMIT, Galway, Ireland
 
 ## Overview
 As a required part of my 3rd year project for module Data Representation & Querying, in GMIT Galway, I have created an API which Allows developers to connect and retrieve information from the above URL. The details i feel will be extremely useful as it holds a complete list of Primary Schools in Ireland, plus all other associated relevant data. 
@@ -183,9 +187,8 @@ A sample response would look like this:
 ```
 
 ##HTTP methods and Examples
-Here i'll be covering some examples of how to use HTTP methods with this API. 
-
-A typical breakdown of the first url, outlined as a JSON example ```http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name]```
+In this section i will be covering some examples of how to use HTTP methods with this API. 
+Firstly, here is a breakdown of each sub part of a sample URL, mentioned earlier; ```http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name]```
 
 
 |  URL Section     | Explanation  |
