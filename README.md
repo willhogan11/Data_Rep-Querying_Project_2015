@@ -208,7 +208,7 @@ This is how the request body should look like;
 ```
 POST /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
 host: www.education.ie
-CountyName=Galway&LocalAuthorityDesc&=Galway&country&council& OfficialSchoolName=Scoil&Mhuire ... and so on 
+id=304&CountyName=Galway&LocalAuthorityDesc&=Galway&country&council&OfficialSchoolName=Scoil&Mhuire ... and so on 
 ...
 ```
 
@@ -221,17 +221,31 @@ A sample request body should look something like this;
 ```
 GET /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
 host: www.education.ie
-id=304&OfficialSchoolName=Scoil&Mhuire
+OfficialSchoolName=Scoil&Mhuire
 ...
 ```
 
 ####PUT Example
-``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/put/ ```
+Here is an example of how to update a record, using the PUT method
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/put/304 ```
 
 ####Request Body Example
+And here is the request body, note the School name has been edited;
 ```
 PUT /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
 host: www.education.ie
-OfficialSchoolName=Scoil&Mhuire
+OfficialSchoolName=Scoil&Mhuire&Naofa
+...
+```
+
+####DELETE Example
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/delete/304 ```
+
+####Request Body Example
+This is a sample DELETE operation request;
+```
+DELETE /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
+host: www.education.ie
+id=304
 ...
 ```
