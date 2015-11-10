@@ -188,8 +188,7 @@ A sample response would look like this:
 
 ##HTTP methods and Examples
 In this section i will be covering some examples of how to use HTTP methods with this API. 
-Firstly, here is a breakdown of each sub part of a sample URL, mentioned earlier; ```http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name]```
-
+Firstly, here is a breakdown of each sub part of a sample URL, mentioned earlier; ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name] ```
 
 |  URL Section     | Explanation  |
 |:----------------:|:-------------------------------------------:|
@@ -198,3 +197,24 @@ Firstly, here is a breakdown of each sub part of a sample URL, mentioned earlier
 | education.ie | Domain | 
 | en/Publications/Statistics/PrimarySchools/county/name/ | Path |  
 | [name] | The Search Criteria |
+
+
+####POST Example
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/new ```
+
+####Request Body Example
+```
+POST /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
+host: www.education.ie
+CountyName=Galway&LocalAuthorityDesc&=Galway&country&council& OfficialSchoolName=Scoil&Mhuire ... and so on 
+```
+
+####GET Example
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Scoil&Mhuire ```
+
+####Request Body Example
+```
+GET /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
+host: www.education.ie
+OfficialSchoolName=Scoil&Mhuire
+```
