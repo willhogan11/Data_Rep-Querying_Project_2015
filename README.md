@@ -126,10 +126,10 @@ And the equivalent in XML format:
 
 ####Sample Search Options
 Likewise if we change the search criteria at this URL:
-``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All+Irish] ``` 
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/[No Irish/All&Irish] ``` 
 
 To search for:
-``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All+Irish ```
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All&Irish ```
 The reponse will contain all rows where the school ciriculum is taught through Irish. 
 
 A sample JSON response would look like this:
@@ -158,7 +158,7 @@ A sample JSON response would look like this:
 ```
 
 To search for:
-``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/SchoolName/Ennistymon+National+School ```
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/SchoolName/Ennistymon&National&School ```
 The reponse will contain a row with the School name 
 
 A sample response would look like this:
@@ -200,21 +200,38 @@ Firstly, here is a breakdown of each sub part of a sample URL, mentioned earlier
 
 
 ####POST Example
+This example outlines the requirements for posting a new record, in this case a new School
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/new ```
 
 ####Request Body Example
+This is how the request body should look like;
 ```
 POST /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
 host: www.education.ie
 CountyName=Galway&LocalAuthorityDesc&=Galway&country&council& OfficialSchoolName=Scoil&Mhuire ... and so on 
+...
 ```
 
 ####GET Example
-``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Scoil&Mhuire ```
+This example details the requirements for a get request, where the number appended to the end of the URL is the id number;
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/get/304 ```
 
 ####Request Body Example
+A sample request body should look something like this;
 ```
 GET /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
 host: www.education.ie
+id=304&OfficialSchoolName=Scoil&Mhuire
+...
+```
+
+####PUT Example
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/put/ ```
+
+####Request Body Example
+```
+PUT /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
+host: www.education.ie
 OfficialSchoolName=Scoil&Mhuire
+...
 ```
