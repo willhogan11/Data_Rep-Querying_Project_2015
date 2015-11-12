@@ -49,7 +49,7 @@ Here is a breakdown of each field:
 My API was designed to be made accessible to anyone looking for information regarding Primary Schools in Ireland. This has been made possible by connecting with the [data.gov.ie](https://data.gov.ie/data) website and using my API as the interface to retrieve the information. 
 
 ####Using the provided URL's
-With this API, you can get a list returned in JSON format using the GET method at the following URL:
+With this API, you can get a list returned in JSON format using the POST(Preferred) or GET method at the following URL:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name] ``` 
 where the _name_ section of the url, requires the users input. 
 So for example if we type in Carlow instead of the [name], the URL will change to this:
