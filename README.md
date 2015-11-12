@@ -218,11 +218,10 @@ This is an example of how to retrieve information with a POST method
 ####GET Example
 This is another example that details the requirements for a GET request, where the number appended to the end of the URL is the id number. 
 
-NOTE: I would strongly discourage the use of this method in this fashion, opting instead for the ```POST``` method, mentioned above. You can send a request body with GET but it should not have any meaning. If you give it meaning by parsing it on the server and changing your response based on its contents you're violating the HTTP/1.1 spec
-``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/get/304 ```
+NOTE: I would strongly discourage the use of this method in this fashion, opting instead for the ```POST``` method, mentioned above. You can send a request body with GET but it should not have any meaning. If you give it meaning by parsing it on the server and changing your response based on its contents you're violating the HTTP/1.1 spec. 
 
-####Request Body Example
-A sample request body should look something like this;
+Here is the example;
+``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/get/304 ```
 
 ####PUT Example
 Here is an example of how to update a record, using the PUT method
