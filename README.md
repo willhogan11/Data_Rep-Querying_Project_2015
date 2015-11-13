@@ -18,7 +18,8 @@ For reference, i have attached the following files:
 
 
 ## Information about the Dataset
-The data extracted form the website itself is in CSV format (Comma Separated Values), which was obtained from [Data-on-Individual-Schools](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html).You will need to look for the heading within this page called "Primary All Schools" 
+The data extracted form the website itself is in CSV format (Comma Separated Values), which was obtained from [Data-on-Individual-Schools](http://www.education.ie/en/Publications/Statistics/Data-on-Individual-Schools/Data-on-Individual-Schools.html).You will need to look for the heading within this page called "Primary All Schools". 
+
 
 ###Size, Fields & Values
 The file contains 3138 unique rows. Each row has 17 fields with associated values. 
@@ -46,12 +47,15 @@ Here is a breakdown of each field:
 
 
 ##Design & URL's
-My API was designed to be made accessible to anyone looking for information regarding Primary Schools in Ireland. This has been made possible by connecting with the [data.gov.ie](https://data.gov.ie/data) website and using my API as the interface to retrieve the information. 
+My API was designed to be made accessible to anyone looking for information regarding Primary Schools in Ireland. This has been made possible by connecting with the [data.gov.ie](https://data.gov.ie/data) website and using my API as the interface to retrieve the information.
+
+The data format returned, can be either JSON or XML. The examples provided in this API, focus primarily on JSON format, however just to illustrate, i have included a sample xml response also.  
 
 ####Using the provided URL's
 With this API, you can get a list returned in JSON format using the POST(Preferred) or GET method at the following URL:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/[name] ``` 
 where the _name_ section of the url, requires the users input. 
+
 So for example if we type in Carlow instead of the [name], the URL will change to this:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/Carlow ``` and will return a list of schools in Co Carlow, with the following properties for each one:
 - **County Name**: The name of the Country 
@@ -72,7 +76,7 @@ So for example if we type in Carlow instead of the [name], the URL will change t
 - **Total Girls**: Total Girls in the school
 - **Total Pupils**: Total Pupils in the school
 
-Here's an example of a response in JSON format
+Here's an example of one of the response rows in JSON format
 ```json
 [
   {
@@ -99,7 +103,7 @@ Here's an example of a response in JSON format
 
 And the equivalent in XML format:
 ```xml
-<Primary Schools>
+<ROW>
 	<County Name>Carlow</County Name>
 	<Local Authority Desc>Carlow County Council</Local Authority Desc>
 	<Roll No.>00651R</Roll No.>
@@ -121,7 +125,7 @@ And the equivalent in XML format:
 		<Total Girls>103</Total Girls>
 		<Total Pupils>207</Total Pupils>
 	</Totals>
-</Primary Schools>
+</ROW>
 ```
 
 ####Sample Search Options
@@ -132,7 +136,7 @@ To search for:
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/TaughtThroughIrish/All&Irish ```
 The reponse will contain all rows where the school ciriculum is taught through Irish. 
 
-A sample JSON response would look like this:
+A sample Row returned in JSON format would look like this:
 ```json
 [
   {
@@ -157,7 +161,7 @@ A sample JSON response would look like this:
 ]
 ```
 
-To search for:
+To search for a particular school: 
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/SchoolName/Ennistymon&National&School ```
 The reponse will contain a row with the School name 
 
@@ -204,7 +208,7 @@ This example outlines the requirements for posting a new record, in this case a 
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/new ```
 
 ####Request Body Example
-This is how the request body should look like;
+This is a partial view of how the request body should look like;
 ```
 POST /en/Publications/Statistics/PrimarySchools/county/name/schoolName.html / HTTP/1.1
 host: www.education.ie
@@ -212,13 +216,13 @@ id=304&CountyName=Galway&LocalAuthorityDesc&=Galway&country&council&OfficialScho
 ...
 ```
 ####POST Example for retrieval 
-This is an example of how to retrieve information with a POST method
+This is an example of how to retrieve information with a POST method, where the number appended to the end of the URL is the id number.
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/get/304 ```
 
 ####GET Example
-This is another example that details the requirements for a GET request, where the number appended to the end of the URL is the id number. 
+This is another example that details the requirements for a GET request, with the same idea as with POST. 
 
-NOTE: I would strongly discourage the use of this method in this fashion, opting instead for the ```POST``` method, mentioned above. You can send a request body with GET but it should not have any meaning. If you give it meaning by parsing it on the server and changing your response based on its contents you're violating the HTTP/1.1 spec. 
+**NOTE: I would strongly discourage the use of this method in this fashion, opting instead for the ```POST``` method, mentioned above. You can send a request body with GET but it should not have any meaning. If you give it meaning by parsing it on the server and changing your response based on its contents you're violating the HTTP/1.1 spec. **
 
 Here is the example;
 ``` http://www.education.ie/en/Publications/Statistics/PrimarySchools/county/name/get/304 ```
