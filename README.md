@@ -251,3 +251,8 @@ host: www.education.ie
 id=304
 ...
 ```
+
+####Conclusion
+As outlined above and as one can see, this API contains as much information as is relevant for the Software Developer to be able to work with. I have made this README file easy to read, with Headings, links and a comprehensive breakdown of file formats and general information relevant to the topic. 
+
+I hope that anyone using this finds it useful. 
